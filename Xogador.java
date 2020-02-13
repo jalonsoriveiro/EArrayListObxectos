@@ -1,4 +1,4 @@
-package exemarrayobxectos;
+package earraylistobxectos;
 /**
  *
  * @author jalonsoriveiro
