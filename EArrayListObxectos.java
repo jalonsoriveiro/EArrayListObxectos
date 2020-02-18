@@ -25,12 +25,13 @@ public class EArrayListObxectos {
         ActualizarArrayList obx = new ActualizarArrayList();
         
         
-          for(int i=0;i<5;i++){
-       listaXogadores.add(obx.crearXogador());
+       for(int i=0;i<5;i++){
+          listaXogadores.add(obx.crearXogador());
           }
-       obx.amosar(listaXogadores);
-       obx.buscarXogador(listaXogadores);
-    
+        obx.amosar(listaXogadores);
+         System.out.println("asdasdasd");
+        obx.buscarXogador(listaXogadores);
+
     }
     
 }

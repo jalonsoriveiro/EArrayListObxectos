@@ -6,7 +6,9 @@
 package earraylistobxectos;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
+import javax.swing.JOptionPane;
 import meusmetodos.MeusMetodos;
 import meusmetodos.PedirDato;
 
@@ -36,11 +38,30 @@ public class ActualizarArrayList{
     }
     public void buscarXogador(ArrayList<Xogador>lista){
     
-        Xogador get;
-        get = lista.get(5);
-            System.out.println(get);
+       String nombre = JOptionPane.showInputDialog("Dame Nombre");
+        for (Xogador x : lista) {
+            if (nombre.equals(x.nome)) {
+                System.out.println("El jugador " + nombre + " Tiene el dorsal: " + x.dorsal);
+            }
+        }
             
             
     
+    }
+    
+    public void darDeBaja(ArrayList<Xogador> lista) {
+        int num = Integer.parseInt(JOptionPane.showInputDialog("Dorsal jugador"));
+        for (int i = 0; i < lista.size(); i++) {
+            if (num == lista.get(i).dorsal) {
+                lista.remove(lista.get(i));
+            }
+        }
+    }
+    public void ordenar(ArrayList<Xogador> lista) {
+        Collections.sort(lista);
+        
+    }
+       public void salir() {
+        System.exit(0);
     }
 }

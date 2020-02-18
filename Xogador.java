@@ -52,7 +52,7 @@ public class Xogador implements Comparable {
     public int compareTo(Object o) {
          Xogador x = (Xogador) o;                  
          if(this.nome.compareToIgnoreCase(x.nome)>0)    
-             return 1;
+             return 1;         
          if(this.nome.compareToIgnoreCase(x.nome)<0)    
             return -1;
          else
